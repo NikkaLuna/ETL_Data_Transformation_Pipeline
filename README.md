@@ -1,7 +1,7 @@
-# ETL Pipeline Extract Transform Load
+# ETL Data Transformation Pipeline
 
 ## Overview
-This project demonstrates a simple ETL (Extract, Transform, Load) pipeline implemented in Python. The pipeline extracts data from multiple file formats (CSV, JSON, XML), transforms the data as needed, and then loads the transformed data into a CSV file. The entire process is logged, providing transparency and traceability for each step.
+This project demonstrates a simple ETL (Extract, Transform, Load) pipeline implemented in Python. The pipeline extracts data from multiple file formats (CSV, JSON, XML), transforms the data, and then loads the transformed data into a CSV file. The entire process is logged, providing transparency and traceability for each step.
 
 ## Features
 - **Extraction:** Automatically extracts data from CSV, JSON, and XML files located in the working directory.
@@ -22,7 +22,7 @@ Ensure you have the following installed:
 Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/etl-pipeline.git
+git clone https://github.com/NikkaLuna/ETL_Data_Transformation_Pipeline.git
 cd etl-pipeline
 ```
 
@@ -36,8 +36,8 @@ python etl_pipeline.py
 
 Check the log_file.txt for the ETL process logs and transformed_data.csv for the output.
 
-Logging
+## Logging
 The script logs the start and end of each ETL phase to log_file.txt with a timestamp for easier debugging and process tracking.
 
-Output
+## Output
 The transformed data will be saved to transformed_data.csv.

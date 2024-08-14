@@ -19,22 +19,41 @@ Ensure you have the following installed:
 
 ## Usage
 
-Clone this repository:
-
+1. **Clone the Repository:**
+   
 ```bash
 git clone https://github.com/NikkaLuna/ETL_Data_Transformation_Pipeline.git
-cd etl-pipeline
+cd ETL_Data_Transformation_Pipeline
+```
+2. **Set Up the Environment:**
+   
+   Ensure you have Python 3.x installed on your system.
+   
+   *(Optional but recommended)* Create and activate a virtual environment to manage dependencies:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
-Place your CSV, JSON, and XML files in the same directory as the script.
+3. **Install Dependencies:**
+   
+   Install the required Python packages. Since some packages are part of the standard library (like `glob` and `xml.etree.ElementTree`), you only need to install `pandas`:
 
-Run the ETL pipeline:
+```bash
+pip install pandas
+```
+
+4. **Place Your Data Files:**
+Place your CSV, JSON, and XML files in the same directory as the etl_pipeline.py script. Ensure that these files are correctly formatted as expected by the script.
+
+5. **Run the ETL Pipeline:**
+Execute the script to run the ETL process:
 
 ```bash
 python etl_pipeline.py
 ```
 
-Check the log_file.txt for the ETL process logs and transformed_data.csv for the output.
 
 ## Logging
 The script logs the start and end of each ETL phase to log_file.txt with a timestamp for easier debugging and process tracking.
